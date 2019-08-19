@@ -10,7 +10,8 @@ exports.handler = function(event, context, callback) {
   base("posts")
     .select({
       maxRecords: 10,
-      view: "Grid view"
+      view: "Grid view",
+      sort: [{ field: "plublishedAt", direction: "desc" }]
     })
     .eachPage(
       (records, fetchNextPage) => {
