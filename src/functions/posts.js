@@ -16,8 +16,9 @@ exports.handler = function(event, context, callback) {
       (records, fetchNextPage) => {
         records.forEach(record => {
           posts.push(record);
-          fetchNextPage();
         });
+
+        fetchNextPage();
       },
       err => {
         if (err) {
