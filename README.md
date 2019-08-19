@@ -11,12 +11,12 @@ Create a new base on [Airtable](https://airtable.com/).
 Create a new table inside that base called `posts`. The table should have four
 fields:
 
-1. id - autonumber
-2. title - single line text
-3. content - long text
-4. publishedAt - date with time included
+1. `id` - autonumber
+2. `title` - single line text
+3. `content` - long text
+4. `publishedAt` - date with time included
 
-Make note of the base ID. Clicking **Help** > **API Documentation**. The ID will
+Make note of the base ID. Click **Help** > **API Documentation**. The ID will
 be in the **INTRODUCTION** section.
 
 Make note of your personal API key. Go to your [Account
@@ -41,13 +41,12 @@ Add a new variable called `AIRTABLE_API_KEY` and paste in your personal API key.
 ## Usage
 
 Go to the URL Netlify created for your site. You'll see any blog posts you've
-entered on the `posts` Airtable table.
+entered on the `posts` table on Airtable.
 
 ## To Do
 
 - Admin authentication
-- Creating, updating, and deleted posts through this project instead of Airtable
-  UI.
+- Create, update, and delete posts through this project instead of Airtable UI.
 - Single post view
 - Add style to site
 
