@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import HelloWorld from "@/components/RecentPostsListing.vue";
+import RecentPostsListing from "@/components/RecentPostsListing.vue";
 
 export default {
   name: "home",
