@@ -2,3 +2,7 @@
   publish = "dist/"
   command = "npm run build"
   functions = "src/functions/"
+
+[template.environment]
+  AIRTABLE_BASE_ID = ""
+  AIRTABLE_API_KEY = ""
