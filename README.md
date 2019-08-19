@@ -4,8 +4,6 @@ A blog using Airtable as the datastore.
 
 ## Installation
 
-### Airtable Setup
-
 Create a new base on [Airtable](https://airtable.com/).
 
 Create a new table inside that base called `posts`. The table should have four
@@ -16,23 +14,19 @@ fields:
 3. `content` - long text
 4. `publishedAt` - date with time included
 
-Make note of the base ID. Click **Help** > **API Documentation**. The ID will
-be in the **INTRODUCTION** section.
+Click **Help** > **API Documentation**. Make note of the base ID. It will be in
+the **INTRODUCTION** section.
 
-Make note of your personal API key. Go to your [Account
-overview](https://airtable.com/account) and look in the **API** section.
+Go to your [Account overview](https://airtable.com/account) and look in the
+**API** section. Make note of your personal API key.
 
-### GitHub Setup
+Click the button below.
 
-Fork this repository.
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/travishorn/airtable-blog)
 
-### Netlify Setup
-
-Create a **New site from Git** on [Netlify](https://app.netlify.com). Link the
-site with your forked repository.
-
-Click **Site Settings** > **Build & Deploy**. Scroll down to the **Environment**
-section and click **Edit variables**
+Once your Netlify site has been created, go to  **Site Settings** > **Build &
+Deploy**. Scroll down to the **Environment** section and click **Edit
+variables**
 
 Add a new variable called `AIRTABLE_BASE_ID` and paste in the base ID.
 
@@ -40,8 +34,8 @@ Add a new variable called `AIRTABLE_API_KEY` and paste in your personal API key.
 
 ## Usage
 
-Go to the URL Netlify created for your site. You'll see any blog posts you've
-entered on the `posts` table on Airtable.
+Go to the URL Netlify created for your site. The homepage contains any blog
+posts you've entered on the `posts` table on Airtable.
 
 ## To Do
 
