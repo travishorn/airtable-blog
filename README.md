@@ -14,23 +14,23 @@ fields:
 3. `content` - long text
 4. `publishedAt` - date with time included
 
-Click **Help** > **API Documentation**. Make note of the base ID. It will be in
-the **INTRODUCTION** section.
+While in your base, click **Help** > **API documentation**. Record the base ID. You'll need it in a moment.
+It will be in the **INTRODUCTION** section.
+
+![Where to find base ID](./images/instructions-base-id.png)
 
 Go to your [Account overview](https://airtable.com/account) and look in the
-**API** section. Make note of your personal API key.
+**API** section. Record your personal API key. You'll need it in a moment.
+
+![Where to find API key](./images/instructions-api-key.png)
 
 Click the button below.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/travishorn/airtable-blog)
+[![Deploy to
+Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/travishorn/airtable-blog)
 
-Once your Netlify site has been created, go to  **Site Settings** > **Build &
-Deploy**. Scroll down to the **Environment** section and click **Edit
-variables**
-
-Add a new variable called `AIRTABLE_BASE_ID` and paste in the base ID.
-
-Add a new variable called `AIRTABLE_API_KEY` and paste in your personal API key.
+Follow the deploy instructions on screen. It will ask for the base ID and API
+key you recorded earlier.
 
 ## Usage
 
