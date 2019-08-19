@@ -2,7 +2,7 @@ const Airtable = require("airtable");
 
 const base = new Airtable({
   apiKey: process.env.AIRTABLE_API_KEY
-}).base("appoC1CxYi7ebruAR");
+}).base(process.env.AIRTABLE_BASE_ID);
 
 exports.handler = function(event, context, callback) {
   const posts = [];
