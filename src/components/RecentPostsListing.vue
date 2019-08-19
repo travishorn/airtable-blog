@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PostTeaser v-for="post in posts" :key="post.fields.id" :post="post" />
+    <PostTeaser class="postListing-post" v-for="post in posts" :key="post.fields.id" :post="post" />
   </div>
 </template>
 
@@ -28,3 +28,11 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+  .postListing-post {
+    border-bottom: solid 1px gainsboro;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+</style>
