@@ -1,10 +1,12 @@
 <template>
   <div>
-    {{ posts }}
+    <PostTeaser v-for="post in posts" :key="post.fields.id" :post="post" />
   </div>
 </template>
 
 <script>
+import PostTeaser from "@/components/PostTeaser.vue";
+
 export default {
   name: "RecentPostsListing",
   data() {
@@ -20,6 +22,9 @@ export default {
       .then(data => {
         this.posts = data;
       });
+  },
+  components: {
+    PostTeaser
   }
 };
 </script>
