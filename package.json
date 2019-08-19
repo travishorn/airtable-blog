@@ -2,6 +2,7 @@
   "name": "airtable-blog",
   "version": "2.3.1",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
